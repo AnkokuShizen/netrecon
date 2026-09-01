@@ -3,14 +3,22 @@
 # ============================================
 
 # پوشه خروجی کامل (داخل آن: details_*.xml, enum4linux_*.txt, nikto_*.txt, dnsrecon_*.txt و ...)
+# هر دو حالت حروف — چون گیت در لینوکس به بزرگ/کوچکی حساس است
 output/
+Output/
+OUTPUT/
+
+# آرشیو per-IP که اسکریپت در ریشه پروژه می‌سازد (last_scan.txt, ports.txt, details_*.xml)
+netrecon_results/
 
 # گزارش نهایی HTML
 Final_Scan_Report.html
+final_scan_report*.html
 
-# لیست هاست‌های زنده
+# لیست هاست‌های زنده + نگاشت IP به تارگت مبدا
 live_ips.txt
 live_hosts.grep
+scan_origin.txt
 
 # خروجی‌های nmap (اسکن پورت)
 scan_results.nmap
